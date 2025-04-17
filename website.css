@@ -1,0 +1,49 @@
+body{
+
+    margin: 0%;
+    overflow-x: hidden;
+    
+    }
+    
+    
+    
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+        
+        border: 2px solid black;
+        align-items: center;
+        top: 0px;
+        width: 100%;
+        background-color: aqua ;
+        
+    }
+    .navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    
+}
+.web1{
+
+display: flex;
+justify-content: center;
+padding: 10px;
+padding-top: 50px;
+gap: 20px;
+
+
+}
+.web1-one{
+    position: relative;
+}
+.web1-content{
+    background-color: white;
+    padding: 13px 150px;
+    position: absolute;
+    left: 80px;  
+    bottom: 50px;
+}
+.web1-second{
+    position: relative;
+}
