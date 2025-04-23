@@ -8,7 +8,8 @@ body{
     
     
     .navbar{
-        display: flex;
+        display: flex; 
+        flex-wrap: wrap;
         justify-content: space-around;
         
         border: 2px solid black;
@@ -21,10 +22,11 @@ body{
 
     .navbar ul{
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     gap: 40px;
     }
-    #click:checked~navbar ul{
+    #click:checked~.navbar ul{
         display: block;
     }
     .navbar label{
@@ -46,12 +48,19 @@ body{
 .web1{
 
 display: flex;
+/* flex-wrap: wrap; */
 justify-content: center;
-padding: 10px;
-padding-top: 50px;
+padding-top:50px;
 gap: 20px;
+padding: 10px;
 
 
+}
+
+@media screen and (max-width:650px) {
+    .web1{
+        flex-direction: column;
+    }
 }
 .web1-one{
     position: relative;
@@ -68,6 +77,7 @@ gap: 20px;
 }
 .img1{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: aliceblue;
     gap: 30px;
@@ -88,8 +98,10 @@ padding: 3px;
 }
 .sec1{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 200px;
+    /* padding: 200px; */
     margin: 10px;
+    align-items: center;
     gap: 200px;
 }
